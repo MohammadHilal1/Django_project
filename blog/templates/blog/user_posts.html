@@ -1,5 +1,6 @@
 {%extends "blog/base.html"%}
 {% block content %}
+    <h1 class="mt-4">Posts By {{view.kwargs.username}} ({{page_obj.paginator.count}})</h1>
     <div class="content-section">
       <form method="get" action="">
         <div class="input-group">
@@ -41,4 +42,3 @@
       {% endif %}
     {% endif %}
 {% endblock content%}
-    
